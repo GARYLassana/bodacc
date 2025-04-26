@@ -1,0 +1,85 @@
+# Datasource configurations
+KARAWEB_JDBC_URL: jdbc:postgresql://192.168.2.54:5970/karaweb_qualification?serverTimezone=Europe/Paris
+KARAWEB_USERNAME: api_quality
+KARAWEB_PASSWORD: Karoil_qual93
+KARAWEB_DRIVER_CLASS: org.postgresql.Driver
+KARAWEB_CONNECTION_INIT_SQL: SET NAMES 'UTF8'
+
+RESEAUF_JDBC_URL: jdbc:postgresql://192.168.2.53:7965/reseauf?serverTimezone=Europe/Paris
+RESEAUF_USERNAME: extranet_ninja
+RESEAUF_PASSWORD: QPeiTaV1aVHg74v3lMpP
+RESEAUF_DRIVER_CLASS: org.postgresql.Driver
+RESEAUF_CONNECTION_INIT_SQL: SET NAMES 'UTF8'
+
+# JPA configurations
+JPA_HIBERNATE_DDL_AUTO: update
+JPA_SHOW_SQL: true
+JPA_OPEN_IN_VIEW: false
+JPA_HIBERNATE_FORMAT_SQL: true
+JPA_HIBERNATE_DIALECT: org.hibernate.dialect.PostgreSQLDialect
+JPA_HIBERNATE_USE_JDBC_METADATA_DEFAULTS: false
+
+# Mail configurations
+MAIL_HOST: smtp.gmail.com
+MAIL_PORT: 587
+MAIL_USERNAME: pneubobo@gmail.com
+MAIL_PASSWORD: ejpqycpsxvtbnizb
+MAIL_SMTP_AUTH: true
+MAIL_SMTP_STARTTLS_ENABLE: true
+
+# DevTools configurations
+DEVTOOLS_RESTART_ENABLED: true
+DEVTOOLS_LIVERELOAD_ENABLED: true
+
+# Application configurations
+APPLICATION_NAME: bodacc
+
+# Logging configurations
+LOGGING_LEVEL_ROOT: ERROR
+LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_WEB: DEBUG
+LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_WEB_FILTER_COMMONS_REQUEST_LOGGING_FILTER: DEBUG
+LOGGING_LEVEL_HIBERNATE_SQL: ERROR
+LOGGING_LEVEL_HIBERNATE_TYPE_DESCRIPTOR_SQL: ERROR
+LOGGING_LEVEL_COM_BODACC_CONFIGURATION_STARTUPLOGGER: INFO
+LOGGING_LEVEL_COM_BODACC_CONFIGURATION_DATASOURCES: INFO
+
+# Bodacc configurations
+BODACC_REQUEST_ORDERS: dateparution,id
+BODACC_REQUEST_FAMILLES: familles,collective
+BODACC_REQUEST_MONTHS: 2
+BODACC_URL_PARAMS_BASE_URL: https://bodacc-datadila.opendatasoft.com/api/explore/v2.1/catalog/datasets/annonces-commerciales/records
+BODACC_URL_PARAMS_PAGE_SIZE: 500
+
+# Email configurations
+BODACC_EMAIL_ADMIN_EMAILS: tl0753662720@gmail.com,ltalbi@autovision.fr
+BODACC_EMAIL_FILENAME: bodacc_extraction_DATE.json
+BODACC_EMAIL_SUBJECT: BODACC - Mise à jour des informations légales [DATE]
+BODACC_EMAIL_BODY: >
+  Bonjour,
+
+  Veuillez trouver en pièce jointe les publications légales récentes extraites du BODACC concernant la mise à jour des informations relatives à nos centres.
+
+  Ces publications peuvent concerner :
+  - Créations d'établissements
+  - Modifications d'informations légales
+  - Radiations
+  - Procédures collectives
+  - Autres formalités
+
+  Chaque annonce contient les informations principales, telles que :
+  - Dénomination sociale
+  - Forme juridique
+  - Activité
+  - Adresse
+  - Tribunal compétent
+  - Nature de la publication
+
+  Nous vous invitons à consulter le fichier joint pour accéder au détail complet de chaque annonce.
+
+  Pour toute question ou besoin d'assistance, n'hésitez pas à nous contacter.
+
+  Cordialement,
+  Bruno NESTEL
+
+# Server configurations
+SERVER_PORT: 2020
