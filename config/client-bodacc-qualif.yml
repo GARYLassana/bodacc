@@ -1,0 +1,40 @@
+# Bodacc specific configuration
+bodacc:
+  request:
+    orders: dateparution,id
+    familles: familles,collective
+    months: 2
+  url_params:
+    base_url: https://bodacc-datadila.opendatasoft.com/api/explore/v2.1/catalog/datasets/annonces-commerciales/records
+    page_size: 500
+  email:
+    admin_emails: tl0753662720@gmail.com,ltalbi@autovision.fr
+    filename: bodacc_extraction_DATE.json
+    subject: BODACC - Mise à jour des informations légales [DATE]
+    body: "Bonjour2013213,\n\nVeuillez trcxouver en pièce jointe les publications légales récentes extraites du BODACC concernant la mise à jour des informations relatives à nos centres.\n\nCe s publications peuvent concerner :\n- Créations d'établissements\n- Modifications d'informations légales\n- Radiations\n- Procédures collectives\n- Autres formalités\n\nChaque annonce contient les informations principales, telles que :\n- Dénomination sociale\n- Forme juridique\n- Activité\n- Adresse\n- Tribunal compétent\n- Nature de la publication\n\nNous vous invitons à consulter le fichier joint pour accéder au détail complet de chaque annonce.\n\nPour toute question ou besoin d'assistance, n'hésitez pas à nous contacter.\n\nCordialement,\nBruno NESTEL"
+
+# Server configuration
+server:
+  port: 2020  # Valeur par défaut
+  # Datasource configurations
+
+reseauf:
+  url: jdbc:postgresql://192.168.2.53:7965/reseauf?serverTimezone=Europe/Paris
+  username: robot_compta
+  password: karoil_test_robot_93
+  driver: org.postgresql.Driver
+karaweb:
+  url: jdbc:postgresql://192.168.2.54:5970/karaweb_qualification?serverTimezone=Europe/Paris
+  username: api_quality
+  password: Karoil_qual93
+  driver: org.postgresql.Driver
+
+# Mail server configurations
+mail:
+  host: smtp.gmail.com
+  port: 587
+  username: pneubobo@gmail.com
+  password: ejpqycpsxvtbnizb  # Utilise un moyen sécurisé pour récupérer ce mot de passe
+  properties:
+  auth: true
+  enable: true
