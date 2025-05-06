@@ -11,7 +11,7 @@ bodacc:
     admin_emails: tl0753662720@gmail.com,ltalbi@autovision.fr
     filename: bodacc_extraction_DATE.json
     subject: BODACC - Mise à jour des informations légales [DATE]
-    body: "Bonjour3,\n\nVeuillez trcxouverf en pièce jointe les publications légales récentes extraites du BODACC concernant la mise à jour des informations relatives à nos centres.\n\nCe s publications peuvent concerner :\n- Créations d'établissements\n- Modifications d'informations légales\n- Radiations\n- Procédures collectives\n- Autres formalités\n\nChaque annonce contient les informations principales, telles que :\n- Dénomination sociale\n- Forme juridique\n- Activité\n- Adresse\n- Tribunal compétent\n- Nature de la publication\n\nNous vous invitons à consulter le fichier joint pour accéder au détail complet de chaque annonce.\n\nPour toute question ou besoin d'assistance, n'hésitez pas à nous contacter.\n\nCordialement,\nBruno NESTEL"
+    body: "Bonjour,\n\nVeuillez trcxouverf en pièce jointe les publications légales récentes extraites du BODACC concernant la mise à jour des informations relatives à nos centres.\n\nCe s publications peuvent concerner :\n- Créations d'établissements\n- Modifications d'informations légales\n- Radiations\n- Procédures collectives\n- Autres formalités\n\nChaque annonce contient les informations principales, telles que :\n- Dénomination sociale\n- Forme juridique\n- Activité\n- Adresse\n- Tribunal compétent\n- Nature de la publication\n\nNous vous invitons à consulter le fichier joint pour accéder au détail complet de chaque annonce.\n\nPour toute question ou besoin d'assistance, n'hésitez pas à nous contacter.\n\nCordialement,\nBruno NESTEL"
 
 # Server configuration
 server:
